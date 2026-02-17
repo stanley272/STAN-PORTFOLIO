@@ -8,108 +8,75 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
 
 body {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #f1f5f9;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color:#f1f5f9;
 }
 
 section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
+h1 { font-size:3rem; font-weight:700; }
+h2 { font-size:2rem; margin-bottom:40px; text-align:center; }
+h3 { margin-bottom:10px; }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
-}
+.hero { text-align:center; padding-top:120px; }
+.hero p { margin-top:20px; font-size:1.2rem; color:#cbd5e1; }
 
-.hero {
-  text-align: center;
-  padding-top: 120px;
-}
-
-.hero p {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #cbd5e1;
-}
-
-.buttons {
-  margin-top: 30px;
-}
+.buttons { margin-top:30px; }
 
 button {
-  padding: 12px 24px;
-  border-radius: 30px;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
+  padding:12px 24px;
+  border-radius:30px;
+  border:none;
+  margin:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
 }
 
-.primary {
-  background: #38bdf8;
-  color: #0f172a;
-}
-
-.primary:hover {
-  background: #0ea5e9;
-}
+.primary { background:#38bdf8; color:#0f172a; }
+.primary:hover { background:#0ea5e9; }
 
 .outline {
-  background: transparent;
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
+  background:transparent;
+  border:2px solid #38bdf8;
+  color:#38bdf8;
 }
-
-.outline:hover {
-  background: #38bdf8;
-  color: #0f172a;
-}
+.outline:hover { background:#38bdf8; color:#0f172a; }
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
 }
 
 .card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 20px;
-  transition: 0.3s;
+  background:#1e293b;
+  padding:25px;
+  border-radius:20px;
+  transition:.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  background: #334155;
+  transform:translateY(-8px);
+  background:#334155;
 }
 
 footer {
-  text-align: center;
-  padding: 40px;
-  background: #0f172a;
-  color: #94a3b8;
+  text-align:center;
+  padding:40px;
+  background:#0f172a;
+  color:#94a3b8;
 }
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
+
+a { color:#38bdf8; text-decoration:none; }
+.small { color:#94a3b8; font-size:.9rem; }
 </style>
 </head>
 
@@ -117,7 +84,7 @@ a {
 
 <section class="hero">
   <h1>Stanley Masiongo</h1>
-  <p>Cloud Solutions Architect | AWS • Azure • Multi-Cloud Security</p>
+  <p>Cloud Solutions Architect | AWS • Azure • Multi-Cloud Infrastructure</p>
 
   <div class="buttons">
     <a href="mailto:stanleymasiongo@gmail.com">
@@ -133,43 +100,87 @@ a {
 </section>
 
 <section>
-  <h2>Cloud Architecture Projects</h2>
-  <div class="card-grid">
+<h2>Professional Experience</h2>
+<div class="card-grid">
 
-    <div class="card">
-      <h3>Highly Available 3-Tier AWS Architecture</h3>
-      <p><strong>Stack:</strong> EC2, ALB, Auto Scaling, RDS Multi-AZ, CloudFront</p>
-      <p>Designed production-ready multi-AZ architecture achieving 99.99% uptime.</p>
-    </div>
+<div class="card">
+<h3>Solutions Architect – Computech Limited</h3>
+<p class="small">Sept 2025 – Present</p>
+<p>• AWS & Azure architecture (EC2, S3, VPC, Lambda, AKS, VNets)<br>
+• Infrastructure as Code (CloudFormation)<br>
+• Microservices & Kubernetes deployments<br>
+• Security design (IAM, RBAC, Zero Trust, Firewalls, VPN)<br>
+• Cost optimization & governance</p>
+</div>
 
-    <div class="card">
-      <h3>Secure Multi-Cloud Deployment</h3>
-      <p><strong>Stack:</strong> AWS + Azure, VPN, IAM, RBAC</p>
-      <p>Implemented Zero Trust architecture with secure hybrid connectivity.</p>
-    </div>
+<div class="card">
+<h3>Technician (Cloud & Remote Support) – Computech Limited</h3>
+<p class="small">Feb 2024 – Aug 2025</p>
+<p>• Microsoft 365 & Google Workspace support<br>
+• OS installation & troubleshooting<br>
+• IT security best practices<br>
+• Remote infrastructure support</p>
+</div>
 
-    <div class="card">
-      <h3>Containerized Microservices Platform</h3>
-      <p><strong>Stack:</strong> Docker, Kubernetes, CloudFormation</p>
-      <p>Improved deployment speed by 60% with scalable container platform.</p>
-    </div>
+<div class="card">
+<h3>Technician – Keydata Systems Limited</h3>
+<p class="small">Sept 2022 – Jan 2024</p>
+<p>• Networking & system upgrades<br>
+• Data encryption<br>
+• TIMS/eTIMS configuration<br>
+• Enterprise IT maintenance</p>
+</div>
 
-  </div>
+</div>
 </section>
 
 <section>
-  <h2>Certifications</h2>
-  <div class="card-grid">
-    <div class="card">AWS Solutions Architect – Associate</div>
-    <div class="card">AWS Security Specialty</div>
-    <div class="card">Azure Administrator Associate</div>
-    <div class="card">Oracle Multicloud Architect Professional</div>
-  </div>
+<h2>Cloud Competencies</h2>
+<div class="card-grid">
+
+<div class="card">Compute: EC2, Lambda, ECS, EKS, Auto Scaling</div>
+<div class="card">Storage: S3, EBS, EFS, FSx, AWS Backup</div>
+<div class="card">Databases: RDS, Aurora, DynamoDB, Redshift</div>
+<div class="card">Networking: VPC, Route53, CloudFront, ELB, VPN</div>
+<div class="card">Security: IAM, KMS, WAF, Shield, Secrets Manager</div>
+<div class="card">Monitoring: CloudWatch, CloudTrail, Cost Explorer</div>
+
+</div>
+</section>
+
+<section>
+<h2>Certifications</h2>
+<div class="card-grid">
+<div class="card">AWS Solutions Architect – Associate</div>
+<div class="card">AWS Cloud Practitioner</div>
+<div class="card">AWS Security Specialty</div>
+<div class="card">Microsoft Azure Administrator Associate</div>
+<div class="card">Oracle Multicloud Architect Professional</div>
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="card-grid">
+<div class="card">Diploma in ICT – PC Kinyanjui TTI (2019–2021)</div>
+<div class="card">Certificate in Computer Application – Ebenezer Info College</div>
+<div class="card">KCSE – Uthiru Mixed High School</div>
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p style="text-align:center;">
+Email: stanleymasiongo@gmail.com <br>
+Phone: 0745641176 <br>
+Nairobi, Kenya
+</p>
 </section>
 
 <footer>
-  © 2026 Stanley Masiongo • Nairobi, Kenya
+© 2026 Stanley Masiongo | Cloud Solutions Architect
 </footer>
 
 </body>
 </html>
+
