@@ -96,7 +96,34 @@ footer{
   top:20px;
   right:20px;
 }
+  .cloud-logos{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  padding-bottom:60px;
+}
+
+.logo-card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  border-radius:20px;
+  padding:30px;
+  transition:0.4s ease;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.logo-card img{
+  height:60px;
+}
+
+.logo-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 12px 40px rgba(56,189,248,0.5);
+}
+
 </style>
+  
 </head>
 
 <body>
@@ -124,6 +151,7 @@ footer{
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Cloud">
   </div>
 </section>
+  
 
 
 <section>
